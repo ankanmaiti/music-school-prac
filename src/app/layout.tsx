@@ -10,9 +10,9 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
       <body>
-        <nav className="relative w-full flex justify-center">
+        <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
           <Navbar />
-        </nav>
+        </header>
         {children}
       </body>
     </html>
