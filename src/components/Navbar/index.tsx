@@ -3,11 +3,11 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import NavMenu from "./NavMenu";
 
-import { Button } from "@/components/ui/button";
 import SearchBox from "@/components/SearchBox";
+import { Button } from "@/components/ui/button";
 import ProfileButton from "./ProfileButton";
 
-import { Menu, Package2 } from "lucide-react";
+import { Menu } from "lucide-react";
 
 interface NavbarProps { }
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "@/contexts/ThemeProvider";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -10,10 +11,17 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en">
       <body>
-        <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
-          <Navbar />
-        </header>
-        {children}
+        <ThemeProvider
+          defaultTheme="dark"
+          attribute="class"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
+            <Navbar />
+          </header>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

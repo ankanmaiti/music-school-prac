@@ -10,7 +10,7 @@ export default function SearchBox() {
           <Input
             type="search"
             placeholder="Search products..."
-            className="pl-8 sm:w-[300px] md:w-[200px] lg:w-[300px]"
+            className="pl-8 sm:w-[300px] md:w-[200px] md:focus-within:w-[300px] lg:w-[300px] lg:focus-within:w-[500px] transition-all duration-200"
           />
         </div>
       </form>

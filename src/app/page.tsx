@@ -1,7 +1,14 @@
+import HeroSection from "@/components/HeroSection";
+
 export default function HomePage() {
   return (
     <>
-      <h1 className=" text-2xl text-green-400">This is the Best</h1>
+      <HeroSection
+        title="Unlock Your Musical Potential"
+        description="Find your rhythm and flourish in a vibrant musical community. Start your journey today!"
+        redirectTo="/courses"
+        src="/school.jpg"
+      />
     </>
   );
 }
